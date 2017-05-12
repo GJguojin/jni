@@ -9,10 +9,13 @@ import javax.imageio.ImageIO;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.FileImageOutputStream;
 
+import org.junit.Test;
+
 import com.luciad.imageio.webp.imageio.WebPWriteParam;
 
 public class WebpTest {
 	
+	@Test
 	public void webpTest() throws IOException {
 		
 		// Obtain an image to encode from somewhere

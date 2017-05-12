@@ -6,10 +6,12 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import org.junit.Test;
 import org.pngquant.PngQuant;
 
 public class PngTest {
 	
+	@Test
     public void pngTest() throws IOException {
     	PngQuant pngQuant = new PngQuant();
     	pngQuant.setQuality(20);
