@@ -1,7 +1,5 @@
 package org.pngquant;
 
-import java.io.IOException;
-
 import org.scijava.nativelib.NativeLoader;
 
 abstract class LiqObject {
@@ -13,7 +11,8 @@ abstract class LiqObject {
         NATIVE_LIBRARY_LOADED = true;
         try {
   			NativeLoader.loadLibrary("imagequant");
-  		} catch (IOException e) {
+  			//System.loadLibrary("imagequant");
+  		} catch (Exception e) {
   			System.out.println("loadLibrary error:"+e.getMessage());
   		}
       }

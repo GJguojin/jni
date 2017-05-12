@@ -13,6 +13,7 @@ public class PngTest {
 	
 	@Test
     public void pngTest() throws IOException {
+		System.out.println(System.getProperty("java.library.path"));
     	PngQuant pngQuant = new PngQuant();
     	pngQuant.setQuality(20);
     	BufferedImage image = ImageIO.read(new File("C:\\Users\\Administrator\\Desktop\\pngQuant\\1.png"));
