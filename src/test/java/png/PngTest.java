@@ -15,7 +15,8 @@ public class PngTest {
     public void pngTest() throws IOException {
 		System.out.println(System.getProperty("java.library.path"));
     	PngQuant pngQuant = new PngQuant();
-    	pngQuant.setQuality(20);
+    	pngQuant.setQuality(20, 60);
+    	pngQuant.setSpeed(10);
     	BufferedImage image = ImageIO.read(new File("C:\\Users\\Administrator\\Desktop\\pngQuant\\1.png"));
     	
     	BufferedImage remapped = pngQuant.getRemapped(image);
